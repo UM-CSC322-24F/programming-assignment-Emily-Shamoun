@@ -360,6 +360,12 @@ int main(int argc, char *argv[]){
   int numberOfBoats;
   BoatInfo *boatArray[MAX_BOAT_NUMBER];
 
+  // If a file name is not given, then an error message is displayed and the program stops running.
+  if(argc <= 1){
+    printf("Error, file not entered\n");
+    return EXIT_FAILURE;
+  }
+
   printf("Welcome to the Boat Management System\n");
   printf("-------------------------------------\n\n");
 
